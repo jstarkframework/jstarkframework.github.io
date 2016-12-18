@@ -1,0 +1,303 @@
+﻿
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Expires" content="-1" /> 
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta name="autocomplete" content="off" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>JSTARK FRAMEWORK</title>
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.platform.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/home/portal/css/jstark.portal.css" />
+<script type="text/javascript" src="/web/home/common/crypto/crypto.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.min.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.platform.min.js"></script>
+<script type="text/javascript" src="/web/home/portal/js/jstark.portal.js"></script>
+<script type="text/javascript">var jcontext="";</script>
+<script type="text/javascript">jstark_agent_handle="c6b1cd3e5daac37814171cba39ef4540c7ca89d8c625618d851fa1a97fba1366af9ee1c514e35f46f8fe4504fa750359620065855d0e65b4fe08ac5eaa18ec94e0291d6bbb00be07a10e2a29b61abd3f96a29dccceb176930d9ef86f2b6887ba64465e9ec805572488f810174ad66ca3345740d0fd294e82e47d2e50a2ab2de1,10001";</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> <script type="text/javascript">
+
+    window.onload = function()
+    {       
+    };
+    
+    function fn_download(downtype)
+    {
+        
+            if(downtype=="erd")
+            {
+                window.open("/download/JSTARK_ERD_20140825.png");
+            }
+            else
+            {
+                window.open("http://naver.me/FqDqSfvp");
+            }
+    };
+
+</script>
+</head>
+<body style="background:#EBEBEB">
+
+<form name="jskform" method="post" action="">
+<input name="jskid_submitblock" id="jskid_submitblock" style="display:none;" />
+
+<script type="text/javascript">
+
+window.onerror = function(msg,url,line)
+{
+    try{jskfn_error(msg,url,line);}catch(e){}
+};
+
+window.onresize = function()
+{
+    sub_menu_flag=1;
+    fn_menu_click();
+};
+
+var sub_menu_flag=0;
+function fn_menu_click()
+{
+    var sub_menu = jskfn.getId("jskobj_portal_navi_menu_mini");
+    if(sub_menu_flag==0)
+    {
+        sub_menu.style.display="inline";
+        sub_menu_flag=1;
+    }
+    else
+    {
+        sub_menu_flag=0;
+        sub_menu.style.display="none";
+    }
+}
+
+</script>
+<div id="jsk_alertdiv" class="jskui_alert"></div>
+
+<div class="jskui_portal_header">
+<div class="jskui_portal_top_navi">
+
+<div class="jskui_portal_top_navi_logo">
+<a href="/" onclick="jskfn_portal_home();return false;">
+<img src="/web/home/portal/img/logo_off.png" onmouseover="this.src='/web/home/portal/img/logo_on.png'" onmouseout="this.src='/web/home/portal/img/logo_off.png'" />
+</a>
+</div>
+
+<div class="jskui_portal_top_navi_menu">
+<div style="background-color:#333333">
+    
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+    <font color="#ffffff"><b>ABOUT</b></font>
+    </div>            
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+    <font color="#ffffff"><b>SETTING</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
+    <font color="#ffffff"><b>STUDY</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('download');">
+    <font color="#ffffff"><b>DOWNLOAD</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+    <font color="#ffffff"><b>COMMUNITY</b></font>
+    </div>
+             
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_join">
+    &nbsp;&nbsp;
+</div>
+
+<div class="jskui_portal_top_navi_menu_mini"><img src="/web/home/portal/img/menu.png" style="cursor:pointer" onclick="fn_menu_click()" /></div>
+
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_sub_menu" id="jskobj_portal_navi_menu_mini">
+    <div style="width:100%;background-color:#161617">
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+            <font color="#ffffff"><b>ABOUT</b></font>
+            </div>            
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+            <font color="#ffffff"><b>SETTING</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
+            <font color="#ffffff"><b>STUDY</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('download');">
+            <font color="#ffffff"><b>DOWNLOAD</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+            <font color="#ffffff"><b>COMMUNITY</b></font>
+            </div>
+    </div>
+</div><div class="jskui_portal_main">
+    <div class="jskui_portal_main_contents">
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">DOWNLOAD</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        
+        <div class="jskui_portal_group">
+            <table class="jskui_table">
+            <tr>
+            <th>명칭</th>
+            <th width="70" class="jskui_table_hidden_column">버전</th>
+            <th width="60">용량</th>
+            <th width="60">Down</th>
+            </tr>
+            <tr onmouseover="jskfn_tr_mouseover(this);" onmouseout="jskfn_tr_mouseout(this);">
+            <td class="jskui_left" style="height:100px;padding-left:20px">
+            <span style="font-size:18px"><b>JSTARK BizSuite <span style="font-size:12px;">with JSTARK FRAMEWORK</span></b></span><br />
+            <span style="font-size:10px;line-height:25px">Eclipse Kepler, Tomcat 6, JDK 1.6 (32bit), Redis, API</span><br />
+            <span style="font-size:10px;line-height:25px">Platform, Monitor, Schedule, SDK, Example ...</span>
+            </td>
+            <td class="jskui_table_hidden_column">0.9x9</td>
+            <td>720 MB</td>
+            <td><button onclick="fn_download('full')" class="jskui_button_color_red jskui_button_small"><b>Down</b></button></td>
+            </tr>
+            <tr onmouseover="jskfn_tr_mouseover(this);" onmouseout="jskfn_tr_mouseout(this);">
+            <td class="jskui_left" style="height:60px;padding-left:20px"><b>JSTARK Platform ERD</b></td>
+            <td class="jskui_table_hidden_column"></td>
+            <td>0.2 MB</td>
+            <td><button onclick="fn_download('erd')" class="jskui_button_color_red jskui_button_small"><b>Down</b></button></td>
+            </tr>
+            </table>
+            
+        </div>
+        
+<div class="jskui_group">            
+<pre style="font-size:10pt;font-family: 'Malgun Gothic','Gulim',sans-serif;">
+0.9x9
+■ SCHEDULE 기능 개선
+■ Action Life-cycle 개선 : 오류 발생해도 FinishMethod, FinishAction 수행
+-----------------------------------------------------------------------------------------------------
+0.9x8
+■ JDCP 기능 개선
+-----------------------------------------------------------------------------------------------------
+0.9x7
+■ JDCP 기능 개선
+■ 테이블명/칼럼명/데이터 변경
+■ 스케줄 수동 실행 기능 추가
+■ TEST 오류 수정
+■ APM 기능 개선
+■ ROLE 로직 개선
+■ 예제 수정
+-----------------------------------------------------------------------------------------------------
+0.9x6
+■ Thread 관리 방식 변경
+■ Tracking hidden 처리 방식 변경
+■ JSP 공백 제거 오류 수정
+■ 소스자동생성 기능 개선
+■ Tracking View 기능 개선
+-----------------------------------------------------------------------------------------------------
+0.9x5
+■ APM/TRACKING 성능 개선
+■ 세션 로직 변경
+■ Error Log에 User 정보 추가
+■ Weblogic에서 Class Reload시 Annotation Reload 오류 수정
+-----------------------------------------------------------------------------------------------------
+0.9x4
+■ APM 데이터를 다른 DB에 저장 가능하도록 개선
+ - jstark.watch.properties 수정
+■ DataBase ds, cm 접속 형태의 경우 Connection close error 발생 문제 해결
+■ HttpServletRequest to Bean 기능/예제 추가
+■ Monitor snapshot 기능 추가
+■ Request max size check 기능 추가
+■ tooltip 기능 보완
+-----------------------------------------------------------------------------------------------------
+0.9x3
+■ DList group 함수, Sum, Avg 기능, 예제 추가
+ - public void setGroup(String[] columns)
+ - public double getSum(String key)
+ - public double getAvg(String key)
+ - /WEB-INF/jsp/home/example/sample/sample_list_group.jsp
+-----------------------------------------------------------------------------------------------------
+0.9x2
+■ Service Factory Pattern 변경
+■ navigator context 수정
+■ Dynamic Web Project / Maven Project 변환 TEST 완료
+■ 대량 Schedule 등록 시 발생하는 오류 수정
+■ API, Download 통합
+-----------------------------------------------------------------------------------------------------
+0.9x1
+■ Package 변경
+jstarkextends -> org.jstark.utils
+jstarkframework -> org.jstark.framework
+jstarkmonitor -> org.jstark.monitor
+jstarkplatform -> org.jstark.platform
+jstarkschedule -> org.jstark.schedule
+jstarksdk -> org.jstark.sdk
+■ role update
+update jstark_role set r_action=replace(r_action,'jstark','org.jstark.') where r_action like 'jstark%'
+■ jstarkitsm.jar 삭제
+■ jstark.itsm.properties 삭제
+■ Action/Service Interface 수정
+■ SSL block 기능 추가
+</pre>
+</div>
+          
+<br />
+
+        
+    </div>     
+</div>
+
+<div class="jskui_protal_footer">
+    <div class="jskui_protal_footer_contents" style="text-align:center">   
+Since 2006, Copyright the JSTARK Foundation.<br />
+JSTARK is a trademark of the JSTARK Foundation.<br />jstarklar@gmail.com
+    </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76465298-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="back-top" style="position:fixed; bottom:30px; right:30px;text-align:center">
+    <a href="#top"><img src="/web/home/portal/img/back_to_top.png" style="width:50px" /></a>
+    <div style="font-size:10pt;"><b>Back to Top</b> </div>
+</div>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#back-top").hide();
+        $(function (){
+            $(window).scroll(function (){
+                if ($(this).scrollTop() > 100) 
+                {
+                    $('#back-top').fadeIn();               
+                } 
+                else 
+                {
+                    $('#back-top').fadeOut();
+                }
+            });
+
+            $('#back-top a').click(function (){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    });
+</script></form>
+
+</body>
+</html>

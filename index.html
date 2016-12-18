@@ -1,0 +1,247 @@
+<!DOCTYPE html> 
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Expires" content="-1" /> 
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta name="autocomplete" content="off" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>JSTARK FRAMEWORK</title>
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.platform.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/home/portal/css/jstark.portal.css" />
+<script type="text/javascript" src="/web/home/common/crypto/crypto.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.min.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.platform.min.js"></script>
+<script type="text/javascript" src="/web/home/portal/js/jstark.portal.js"></script>
+<script type="text/javascript">var jcontext="";</script>
+<script type="text/javascript">jstark_agent_handle="a65d5c9413a44e162120488a8f771709df47c88b9b56d838598bd5d1c6dc2785156c045078e730e79703ce841fdd447b0894ae6eff1f96536046288792379e1012f0b0d95cddafaf67ab435106e9edcdf6d6dd450afc93aa7e992b80f61355d0dde092fc7af1513f41bacc1da755154f93068e52a1632bf35373464509d1a94d,10001";</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> <script type="text/javascript">
+
+    window.onload = function()
+    {
+    }; 
+    
+</script>
+</head>
+<body style="background:#EBEBEB">
+
+<form name="jskform" method="post" action="">
+<input name="jskid_submitblock" id="jskid_submitblock" style="display:none;" />
+
+<script type="text/javascript">
+
+window.onerror = function(msg,url,line)
+{
+    try{jskfn_error(msg,url,line);}catch(e){}
+};
+
+window.onresize = function()
+{
+    sub_menu_flag=1;
+    fn_menu_click();
+};
+
+var sub_menu_flag=0;
+function fn_menu_click()
+{
+    var sub_menu = jskfn.getId("jskobj_portal_navi_menu_mini");
+    if(sub_menu_flag==0)
+    {
+        sub_menu.style.display="inline";
+        sub_menu_flag=1;
+    }
+    else
+    {
+        sub_menu_flag=0;
+        sub_menu.style.display="none";
+    }
+}
+
+</script>
+<div id="jsk_alertdiv" class="jskui_alert"></div>
+
+<div class="jskui_portal_header">
+<div class="jskui_portal_top_navi">
+
+<div class="jskui_portal_top_navi_logo">
+<a href="/" onclick="jskfn_portal_home();return false;">
+<img src="/web/home/portal/img/logo_off.png" onmouseover="this.src='/web/home/portal/img/logo_on.png'" onmouseout="this.src='/web/home/portal/img/logo_off.png'" />
+</a>
+</div>
+
+<div class="jskui_portal_top_navi_menu">
+<div style="background-color:#333333">
+    
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+    <font color="#ffffff"><b>ABOUT</b></font>
+    </div>            
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+    <font color="#ffffff"><b>SETTING</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
+    <font color="#ffffff"><b>STUDY</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
+    <font color="#ffffff"><b>DOWNLOAD</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+    <font color="#ffffff"><b>COMMUNITY</b></font>
+    </div>
+             
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_join">
+    &nbsp;&nbsp;
+</div>
+
+<div class="jskui_portal_top_navi_menu_mini"><img src="/web/home/portal/img/menu.png" style="cursor:pointer" onclick="fn_menu_click()" /></div>
+
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_sub_menu" id="jskobj_portal_navi_menu_mini">
+    <div style="width:100%;background-color:#161617">
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+            <font color="#ffffff"><b>ABOUT</b></font>
+            </div>            
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+            <font color="#ffffff"><b>SETTING</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
+            <font color="#ffffff"><b>STUDY</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
+            <font color="#ffffff"><b>DOWNLOAD</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+            <font color="#ffffff"><b>COMMUNITY</b></font>
+            </div>
+    </div>
+</div><div class="jskui_portal_main">
+    <div class="jskui_portal_main_contents">
+    
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>        
+        <div class="jskui_header">
+        
+            <div class="jskui_header_title">JSTARK FRAMEWORK</div>
+            <div class="jskui_header_sub"></div>
+        </div>    
+        <div class="jskui_portal_group">
+	       웹 어플리케이션 개발에 필요한 ALL-IN-ONE 개발 환경을 제공하는 <span style="font-size:14px;"><b>자바 프레임워크(Java Framework)</b></span>.<br />
+	    - 신속한 설치(20분)<br />
+	    - 짧은 학습 시간(2시간)<br />
+	    - 높은 생산성/성능/안정성/보안<br />
+	    - 10년 이상의 운영을 통한 성능 검증<br />
+	    - 기존 환경에 추가 가능, <span style="font-size:10px;line-height:25px">JDK 1.5 이상</span><br />
+	    <b><font color="#FBA500">웹 어플리케이션 개발을 위한 최고의 선택!!</font></b><br />
+        </div>
+        
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">JSTARK PLATFORM</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        <div class="jskui_portal_group">
+              글로벌 비즈니스 시스템을 위한 플랫폼으로<br />
+       Client, User, Menu, Language, Code, Tree, Theme, Security, Sso 등의 기능을 제공합니다.<br />
+        <b><font color="#467299">2014년 미래창조과학부 주최, 제8회 공개SW 개발자대회(OSS WORLD CHALLENGE 2014)<br />
+        </font><font color="#FBA500">일반 자유 부문 동상 수상</font> (JSTARK PLATFORM)</b>
+        </div>
+        
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">JSTARK MONITOR</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        <div class="jskui_portal_group">
+       Log Center를 통해 수집된 성능 로그의 분석으로 시스템 최적화가 가능합니다.<br />
+              실시간 상태 모니터링(APM : Application Performance Management) 기능을 지원합니다.
+        </div>
+        
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">JSTARK SCHEDULE</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        <div class="jskui_portal_group">
+              시스템 내에서 보다 쉽게 스케줄 설정이 가능하며,<br />
+              설정 값에 따라 자동으로 해당 프로그램 실행하고 실시간으로 로그를 확인할 수 있습니다.
+        </div>
+        
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">JSTARK SDK/EXAMPLE</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        <div class="jskui_portal_group">
+              코드 자동 생성 및 코드 생성 지원 도구와 다양한 샘플 예제/템플릿으로 학습 및 개발 시간을 단축하고,<br />
+              동일 품질의 개발로 향후 유지보수 시간의 단축이 가능합니다.
+        </div>
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+        <div class="jskui_br"></div>
+    </div>     
+</div>
+
+<div class="jskui_protal_footer">
+    <div class="jskui_protal_footer_contents" style="text-align:center">   
+Since 2006, Copyright the JSTARK Foundation.<br />
+JSTARK is a trademark of the JSTARK Foundation.<br />jstarklar@gmail.com
+    </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76465298-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="back-top" style="position:fixed; bottom:30px; right:30px;text-align:center">
+    <a href="#top"><img src="/web/home/portal/img/back_to_top.png" style="width:50px" /></a>
+    <div style="font-size:10pt;"><b>Back to Top</b> </div>
+</div>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#back-top").hide();
+        $(function (){
+            $(window).scroll(function (){
+                if ($(this).scrollTop() > 100) 
+                {
+                    $('#back-top').fadeIn();               
+                } 
+                else 
+                {
+                    $('#back-top').fadeOut();
+                }
+            });
+
+            $('#back-top a').click(function (){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    });
+</script></form>
+
+</body>
+</html>

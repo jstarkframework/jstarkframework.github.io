@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html> 
+<html lang="ko">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Expires" content="-1" /> 
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="No-Cache" />
+<meta name="autocomplete" content="off" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>JSTARK FRAMEWORK</title>
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.platform.min.css" />
+<link rel="stylesheet" type="text/css" href="/web/home/portal/css/jstark.portal.css" />
+<script type="text/javascript" src="/web/home/common/crypto/crypto.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.min.js"></script>
+<script type="text/javascript" src="/web/jstark/platform/js/jstark.platform.min.js"></script>
+<script type="text/javascript" src="/web/home/portal/js/jstark.portal.js"></script>
+<script type="text/javascript">var jcontext="";</script>
+<script type="text/javascript">jstark_agent_handle="9118df153aacdeefc37c62243580df263bfc5998e1439d225a677a78d1a94c9500c024c7ef646ac4c2802f6051819b1c1f7fbf76ae2dc5bf06c2b666bb328a6a39fc2838108e509829fb1571ef5b5c69155077991a792a843c2dd0e859ffa7947c8f6e823c44a0e5eddb67c9a223ea3b1ddca607628e3339a46d9e13174044fb,10001";</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> <script type="text/javascript">
+
+    window.onload = function()
+    {       
+    };
+    
+    function fn_video()
+    {
+        window.open("https://www.youtube.com/playlist?list=PLNquv0hdo29Dkr-__eeYhh5dBdLr3V4fe");
+    };
+        
+</script>
+</head>
+<body style="background:#EBEBEB">
+
+<form name="jskform" method="post" action="">
+<input name="jskid_submitblock" id="jskid_submitblock" style="display:none;" />
+<input type="hidden" name="j_tab" id="j_tab" value="STUDY" />
+<input type="hidden" name="j_tab2" id="j_tab2" value="" />
+
+<script type="text/javascript">
+
+window.onerror = function(msg,url,line)
+{
+    try{jskfn_error(msg,url,line);}catch(e){}
+};
+
+window.onresize = function()
+{
+    sub_menu_flag=1;
+    fn_menu_click();
+};
+
+var sub_menu_flag=0;
+function fn_menu_click()
+{
+    var sub_menu = jskfn.getId("jskobj_portal_navi_menu_mini");
+    if(sub_menu_flag==0)
+    {
+        sub_menu.style.display="inline";
+        sub_menu_flag=1;
+    }
+    else
+    {
+        sub_menu_flag=0;
+        sub_menu.style.display="none";
+    }
+}
+
+</script>
+<div id="jsk_alertdiv" class="jskui_alert"></div>
+
+<div class="jskui_portal_header">
+<div class="jskui_portal_top_navi">
+
+<div class="jskui_portal_top_navi_logo">
+<a href="/" onclick="jskfn_portal_home();return false;">
+<img src="/web/home/portal/img/logo_off.png" onmouseover="this.src='/web/home/portal/img/logo_on.png'" onmouseout="this.src='/web/home/portal/img/logo_off.png'" />
+</a>
+</div>
+
+<div class="jskui_portal_top_navi_menu">
+<div style="background-color:#333333">
+    
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+    <font color="#ffffff"><b>ABOUT</b></font>
+    </div>            
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+    <font color="#ffffff"><b>SETTING</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('study');">
+    <font color="#ffffff"><b>STUDY</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
+    <font color="#ffffff"><b>DOWNLOAD</b></font>
+    </div>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+    <font color="#ffffff"><b>COMMUNITY</b></font>
+    </div>
+             
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_join">
+    &nbsp;&nbsp;
+</div>
+
+<div class="jskui_portal_top_navi_menu_mini"><img src="/web/home/portal/img/menu.png" style="cursor:pointer" onclick="fn_menu_click()" /></div>
+
+</div>
+</div>
+
+<div class="jskui_portal_top_navi_sub_menu" id="jskobj_portal_navi_menu_mini">
+    <div style="width:100%;background-color:#161617">
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('about');">
+            <font color="#ffffff"><b>ABOUT</b></font>
+            </div>            
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
+            <font color="#ffffff"><b>SETTING</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('study');">
+            <font color="#ffffff"><b>STUDY</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
+            <font color="#ffffff"><b>DOWNLOAD</b></font>
+            </div>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
+            <font color="#ffffff"><b>COMMUNITY</b></font>
+            </div>
+    </div>
+</div><div class="jskui_portal_main">
+    <div class="jskui_portal_main_contents">
+        <div class="jskui_br"></div>
+        <div class="jskui_header">
+            <div class="jskui_header_title">STUDY</div>
+            <div class="jskui_header_sub"></div>
+        </div>
+        
+        <div class="jskui_portal_group" style="text-align:center;height:500px;">
+        <br /><br /><br /><br />
+        <img src="/web/home/portal/img/video.png" width="800" onclick="fn_video(); return false;" style="cursor:pointer" />
+        <br /><br />
+        <button onclick="fn_video(); return false;" class="jskui_button_color_red"><b>동영상 강좌 이동</b></button>
+        </div>
+        </div>     
+</div>
+
+<div class="jskui_protal_footer">
+    <div class="jskui_protal_footer_contents" style="text-align:center">   
+Since 2006, Copyright the JSTARK Foundation.<br />
+JSTARK is a trademark of the JSTARK Foundation.<br />jstarklar@gmail.com
+    </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76465298-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="back-top" style="position:fixed; bottom:30px; right:30px;text-align:center">
+    <a href="#top"><img src="/web/home/portal/img/back_to_top.png" style="width:50px" /></a>
+    <div style="font-size:10pt;"><b>Back to Top</b> </div>
+</div>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#back-top").hide();
+        $(function (){
+            $(window).scroll(function (){
+                if ($(this).scrollTop() > 100) 
+                {
+                    $('#back-top').fadeIn();               
+                } 
+                else 
+                {
+                    $('#back-top').fadeOut();
+                }
+            });
+
+            $('#back-top a').click(function (){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+    });
+</script></form>
+
+</body>
+</html>
