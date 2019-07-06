@@ -26,19 +26,6 @@
     window.onload = function()
     {       
     };
-    
-    function fn_download(downtype)
-    {
-        
-            if(downtype=="erd")
-            {
-                document.location.href="";
-            }
-            else
-            {
-                document.location.href="https://github.com/jstarkframework/jstarkbizsuite";
-            }
-    };
 
 </script>
 </head>
@@ -148,26 +135,16 @@ function fn_menu_click()
         <div class="jskui_portal_group">
             <table class="jskui_table">
             <tr>
-            <th>명칭</th>
-            <th width="70" class="jskui_table_hidden_column">버전</th>
-            <th width="60">용량</th>
-            <th width="60">Down</th>
+            <th>명칭</th>            
             </tr>
             <tr onmouseover="jskfn_tr_mouseover(this);" onmouseout="jskfn_tr_mouseout(this);">
             <td class="jskui_left" style="height:100px;padding-left:20px">
-            <span style="font-size:18px"><b>JSTARK BizSuite <span style="font-size:12px;">with JSTARK FRAMEWORK</span></b></span><br />
-            <span style="font-size:10px;line-height:25px">Eclipse Neon.3, Tomcat 9, JDK 1.8 (64bit), Redis, API</span><br />
+            <span style="font-size:18px"><a href="https://github.com/jstarkframework/jstarkbizsuite"><b>JSTARK BizSuite <span style="font-size:12px;">with JSTARK FRAMEWORK</span></b></a></span><br />
             <span style="font-size:10px;line-height:25px">Platform, Console, Schedule, SDK, Example ...</span>
-            </td>
-            <td class="jskui_table_hidden_column">0.9x9</td>
-            <td>990 MB</td>
-            <td><button onclick="fn_download('full')" class="jskui_button_color_red jskui_button_small"><b>Down</b></button></td>
+            </td>            
             </tr>
             <tr onmouseover="jskfn_tr_mouseover(this);" onmouseout="jskfn_tr_mouseout(this);">
-            <td class="jskui_left" style="height:60px;padding-left:20px"><b>JSTARK Platform ERD</b></td>
-            <td class="jskui_table_hidden_column"></td>
-            <td>0.2 MB</td>
-            <td><button onclick="fn_download('erd')" class="jskui_button_color_red jskui_button_small"><b>Down</b></button></td>
+            <td class="jskui_left" style="height:60px;padding-left:20px"><a href="http://jstark.org/download/JSTARK_ERD_20140825.png"><b>JSTARK Platform ERD</b></a></td>            
             </tr>
             </table>
             
