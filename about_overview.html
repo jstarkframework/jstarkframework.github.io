@@ -12,38 +12,21 @@
 <meta name="autocomplete" content="off" />
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 <title>JSTARK FRAMEWORK</title>
-<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.min.css" />
-<link rel="stylesheet" type="text/css" href="/web/jstark/platform/css/jstark.platform.min.css" />
-<link rel="stylesheet" type="text/css" href="/web/home/portal/css/jstark.portal.css" />
-<script type="text/javascript" src="/web/home/common/crypto/crypto.js"></script>
-<script type="text/javascript" src="/web/jstark/platform/js/jstark.min.js"></script>
-<script type="text/javascript" src="/web/jstark/platform/js/jstark.platform.min.js"></script>
-<script type="text/javascript" src="/web/home/portal/js/jstark.portal.js"></script>
+<link rel="stylesheet" type="text/css" href="./web/jstark/platform/css/jstark.min.css" />
+<link rel="stylesheet" type="text/css" href="./web/jstark/platform/css/jstark.platform.min.css" />
+<link rel="stylesheet" type="text/css" href="./web/home/portal/css/jstark.portal.css" />
+<script type="text/javascript" src="./web/home/common/crypto/crypto.js"></script>
+<script type="text/javascript" src="./web/jstark/platform/js/jstark.min.js"></script>
+<script type="text/javascript" src="./web/jstark/platform/js/jstark.platform.min.js"></script>
+<script type="text/javascript" src="./web/home/portal/js/jstark.portal.js"></script>
 <script type="text/javascript">var jcontext="";</script>
-<script type="text/javascript">jstark_agent_handle="bd2b9583d5a633590faf9828b6ac31fc7726efb6a30b71757c5a2e132ff1a17583ad35b7c425acc1b5f52d469fc2a540b83196ca9df81a6d6f4e7c871aea0e5269bce0bfb23aef5fd108ee45baf83e0635a1ad739691f08f33e58226df67d7e4ca2f9aa571afd23d6914c9e1c5cabb9446f3aea22cb4051cb63a9553b9b5f0d9,10001";</script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script> <script type="text/javascript">
 
     window.onload = function()
     {       
         fn_status();
     };
-    
-    function fn_tab(j_tab)
-    {
-        if(j_tab=="OVERVIEW")
-        {           
-            document.location = "/about_overview.html"; 
-        }
-        else if(j_tab=="INTRODUCTION")
-        {
-            document.location = "/about_introduction.html"; 
-        }
-        else if(j_tab=="LICENSE")
-        {
-            document.location = "/about_license.html";  
-        }
-    };
-    
+
     var img_number=1;
     function fn_left()
     {
@@ -67,21 +50,21 @@
     {
         if(img_number==1)
         {
-            jskfn.getId("left_img").src="/web/home/portal/img/overview/left_off.png";
-            jskfn.getId("right_img").src="/web/home/portal/img/overview/right_on.png";
+            jskfn.getId("left_img").src="./web/home/portal/img/overview/left_off.png";
+            jskfn.getId("right_img").src="./web/home/portal/img/overview/right_on.png";
         }
         else if(img_number==83)
         {
-            jskfn.getId("left_img").src="/web/home/portal/img/overview/left_on.png";
-            jskfn.getId("right_img").src="/web/home/portal/img/overview/right_off.png";
+            jskfn.getId("left_img").src="./web/home/portal/img/overview/left_on.png";
+            jskfn.getId("right_img").src="./web/home/portal/img/overview/right_off.png";
         }
         else
         {
-            jskfn.getId("left_img").src="/web/home/portal/img/overview/left_on.png";
-            jskfn.getId("right_img").src="/web/home/portal/img/overview/right_on.png";
+            jskfn.getId("left_img").src="./web/home/portal/img/overview/left_on.png";
+            jskfn.getId("right_img").src="./web/home/portal/img/overview/right_on.png";
         }
         
-        jskfn.getId("center_img").src="/home/portal/html/overview/슬라이드"+img_number+".PNG";
+        jskfn.getId("center_img").src="./home/portal/html/overview/슬라이드"+img_number+".PNG";
         
         jskfn.getId("id_number").innerHTML=img_number+"/83";
     };
@@ -136,7 +119,7 @@ function fn_menu_click()
 
 <div class="jskui_portal_top_navi_logo">
 <a href="/" onclick="jskfn_portal_home();return false;">
-<img src="/web/home/portal/img/logo_off.png" onmouseover="this.src='/web/home/portal/img/logo_on.png'" onmouseout="this.src='/web/home/portal/img/logo_off.png'" />
+<img src="./web/home/portal/img/logo_off.png" onmouseover="this.src='./web/home/portal/img/logo_on.png'" onmouseout="this.src='./web/home/portal/img/logo_off.png'" />
 </a>
 </div>
 
@@ -146,17 +129,14 @@ function fn_menu_click()
     <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('about');">
     <font color="#ffffff"><b>ABOUT</b></font>
     </div>            
-    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
-    <font color="#ffffff"><b>SETTING</b></font>
-    </div>
     <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
     <font color="#ffffff"><b>STUDY</b></font>
     </div>
     <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
     <font color="#ffffff"><b>DOWNLOAD</b></font>
     </div>
-    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
-    <font color="#ffffff"><b>COMMUNITY</b></font>
+    <div style="width:130px;height:30px;text-align:center;cursor:pointer;float:left;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('support');">
+    <font color="#ffffff"><b>SUPPORT</b></font>
     </div>
              
 </div>
@@ -166,7 +146,7 @@ function fn_menu_click()
     &nbsp;&nbsp;
 </div>
 
-<div class="jskui_portal_top_navi_menu_mini"><img src="/web/home/portal/img/menu.png" style="cursor:pointer" onclick="fn_menu_click()" /></div>
+<div class="jskui_portal_top_navi_menu_mini"><img src="./web/home/portal/img/menu.png" style="cursor:pointer" onclick="fn_menu_click()" /></div>
 
 </div>
 </div>
@@ -176,29 +156,20 @@ function fn_menu_click()
             <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:#335261" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor='#335261'" onclick="fn_top_click('about');">
             <font color="#ffffff"><b>ABOUT</b></font>
             </div>            
-            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('setting');">
-            <font color="#ffffff"><b>SETTING</b></font>
-            </div>
             <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('study');">
             <font color="#ffffff"><b>STUDY</b></font>
             </div>
             <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('download');">
             <font color="#ffffff"><b>DOWNLOAD</b></font>
             </div>
-            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('community');">
-            <font color="#ffffff"><b>COMMUNITY</b></font>
+            <div style="width:100%;height:40px;line-height:40px;text-align:left;padding-left:20px;cursor:pointer;background-color:" onmouseover="this.style.backgroundColor='#4A6978'" onmouseout="this.style.backgroundColor=''" onclick="fn_top_click('support');">
+            <font color="#ffffff"><b>SUPPORT</b></font>
             </div>
     </div>
 </div><div class="jskui_portal_main">
     <div class="jskui_portal_main_contents">
         <div class="jskui_br"></div>
-        <div class="jskui_header">
-            <div class="jskui_header_title">ABOUT</div>
-            <div class="jskui_header_sub"></div>
-        </div>
-        
-        <div class="jskui_tab_group jskui_tab_group_br"><div class="jskui_tab_item jskui_tab_item_selected" style="width:150px" onclick="fn_tab('OVERVIEW');">OVERVIEW</div><div class="jskui_tab_item" style="width:150px" onclick="fn_tab('INTRODUCTION');">INTRODUCTION</div><div class="jskui_tab_item" style="width:150px" onclick="fn_tab('LICENSE');">LICENSE</div></div><div class="jskui_br"></div>
-        
+       
         <div class="jskui_header">
             <div class="jskui_header_title">OVERVIEW</div>
             <div class="jskui_header_sub" id="id_number"></div>
@@ -208,7 +179,7 @@ function fn_menu_click()
         
         <table class="table_layout" style="width:100%">
         <tr>
-        <td width="20%" class="jskui_left"><img id="left_img" src="/web/home/portal/img/overview/left_off.png" width="20px" style="cursor:pointer" onclick="fn_left()" /></td>
+        <td width="20%" class="jskui_left"><img id="left_img" src="./web/home/portal/img/overview/left_off.png" width="20px" style="cursor:pointer" onclick="fn_left()" /></td>
         <td width="60%">
         <a onclick="fn_page(1);">JSTARK</a>&nbsp;&nbsp;
            <a onclick="fn_page(4);">PLATFORM</a>&nbsp;&nbsp;
@@ -219,7 +190,7 @@ function fn_menu_click()
            <a onclick="fn_page(65);">SDK</a>&nbsp;&nbsp;
            <a onclick="fn_page(69);">EXAMPLE</a>
         </td>       
-        <td width="20%" class="jskui_right"><img id="right_img" src="/web/home/portal/img/overview/right_on.png" width="20px" style="cursor:pointer;" onclick="fn_right()" /></td>
+        <td width="20%" class="jskui_right"><img id="right_img" src="./web/home/portal/img/overview/right_on.png" width="20px" style="cursor:pointer;" onclick="fn_right()" /></td>
         </tr>
         </table>     
                
@@ -260,7 +231,7 @@ JSTARK is a trademark of the JSTARK Foundation.<br />jstarkorg@gmail.com
 </script>
 
 <div id="back-top" style="position:fixed; bottom:30px; right:30px;text-align:center">
-    <a href="#top"><img src="/web/home/portal/img/back_to_top.png" style="width:50px" /></a>
+    <a href="#top"><img src="./web/home/portal/img/back_to_top.png" style="width:50px" /></a>
     <div style="font-size:10pt;"><b>Back to Top</b> </div>
 </div>
 
